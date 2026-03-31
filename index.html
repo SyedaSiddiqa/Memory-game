@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Game</h1>
+        <div class="game-info">
+            <span>Score: <span id="score">0</span></span>
+            <span>Time: <span id="time">60</span>s</span>
+        </div>
+        <div class="game-board" id="gameBoard"></div>
+        <div id="message" class="hidden"></div>
+        <button id="restartBtn" class="hidden">Restart Game</button>
+    </div>
+
+    <!-- Preloaded audio for card flip -->
+    <audio id="flipSound" preload="auto">
+        <source src="johnnybacon156-fah-469417.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
