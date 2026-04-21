@@ -80,7 +80,7 @@ function checkMatch() {
         score++;
         scoreEl.textContent = score;
         resetBoard();
-        if(score === cardsArray.length){
+        if (score === cardsArray.length) {
             endGame(true);
         }
     } else {
@@ -104,14 +104,14 @@ function startTimer() {
     timerInterval = setInterval(() => {
         time--;
         timeEl.textContent = time;
-        if(time <= 0){
+        if (time <= 0) {
             endGame(false);
         }
     }, 1000);
 }
 
 // End game
-function endGame(won){
+function endGame(won) {
     clearInterval(timerInterval);
     lockBoard = true;
     message.classList.remove('hidden');
